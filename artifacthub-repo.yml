@@ -1,5 +1,5 @@
 # Artifact Hub repository metadata file
-repositoryID: lamp
+repositoryID: 28ae74f3-fd66-4c8b-974e-37024625bc95
 owners: # (optional, used to claim repository ownership)
   - name: lead4good
     email: lead4good@users.noreply.github.com
