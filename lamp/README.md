@@ -5,7 +5,8 @@ Ever wanted to deploy a [LAMP Stack](https://en.wikipedia.org/wiki/LAMP_(softwar
 ## TL;DR;
 
 ```console
-$ helm install stable/lamp
+$ helm repo add lamp https://lead4good.github.io/lamp-helm-repository
+$ helm install my-lamp lamp/lamp
 ```
 
 ## Introduction
