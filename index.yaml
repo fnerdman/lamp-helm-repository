@@ -7,7 +7,7 @@ entries:
     description: Modular and transparent LAMP stack chart supporting PHP-FPM, Release
       Cloning, LoadBalancer, Ingress, SSL and lots more!
     digest: f5d8b70df57eaf6d27042d64a04d695211482df2e061b23bb6ac3552c6195dd4
-    home: https://github.com/lead4good/helm-lamp-artifacthub
+    home: https://github.com/lead4good/helm-lamp-repository
     maintainers:
     - name: lead4good
     name: lamp
