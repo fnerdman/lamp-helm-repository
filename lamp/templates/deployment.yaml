@@ -674,10 +674,12 @@ spec:
       {{ if .Values.phpmyadmin.enabled }}
       - image: "{{ .Values.phpmyadmin.repository }}:{{ .Values.phpmyadmin.tag }}"
         name: phpmyadmin
-        command: [sh, -c, sed -i 's/listen\ 80/listen {{ .Values.phpmyadmin.port }}/g' /etc/nginx.conf && /run.sh supervisord -n]
+        # command: [sh, -c, sed -i 's/listen\ 80/listen {{ .Values.phpmyadmin.port }}/g' /etc/nginx.conf && /run.sh supervisord -n]
         env:
         - name: PMA_HOST
           value: 127.0.0.1
+        - name: APACHE_PORT
+          value: {{ .Values.phpmyadmin.port | quote }}
         ports:
         - {containerPort: 8080}
         resources:
