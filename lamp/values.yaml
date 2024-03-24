@@ -224,7 +224,7 @@ phpmyadmin:
   repository: "phpmyadmin"
 
   ## phpmyadmin.tag default phpmyadmin image tag
-  tag: "phpmyadmin"
+  tag: "apache"
 
   ## phpmyadmin.enabled Enables phpmyadmin service
   enabled: false
